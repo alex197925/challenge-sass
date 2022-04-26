@@ -1,8 +1,6 @@
 /** @format */
 // Variables
 
-$padding-general: 30px;
-
 // Mixins
 
 @mixin box-shadow {
@@ -19,7 +17,7 @@ body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
   margin: 0px;
-  padding: $padding-general;
+  padding: (24 * 2);
   background-color: #000;
   background-image: radial-gradient(
       #fff,
@@ -57,9 +55,16 @@ article section {
   }
 }
 
-article section #selling-points {
+article section#selling-points {
   flex-grow: 2;
   flex-basis: 100%;
+  h2 {
+    color: #fff;
+  }
+
+  li {
+    color: red;
+  }
 }
 
 article code {
@@ -116,13 +121,16 @@ h6 {
 }
 
 .success {
+  @extend .success;
   background-color: green;
 }
 
 .error {
+  @extend .error;
   background-color: red;
 }
 
 .warning {
+  @extend .warning;
   background-color: orange;
 }
