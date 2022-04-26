@@ -1,6 +1,7 @@
 /** @format */
+// Variables
 
-// Make one mixin for the 3 lines of the box-shadow styling.
+$padding-general: 30px;
 
 // Mixins
 
@@ -18,7 +19,7 @@ body {
   font: 100% "Space Mono", monospace;
   color: #2748b3;
   margin: 0px;
-  padding: 0px;
+  padding: $padding-general;
   background-color: #000;
   background-image: radial-gradient(
       #fff,
